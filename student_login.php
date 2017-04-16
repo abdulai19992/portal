@@ -26,7 +26,8 @@ if (isset($_POST['submit'])) {
 			
 		if (mysqli_num_rows($result )==1) {
 
-			$_SESSION['portal'] = 'true';
+			$_SESSION['reg_num'] = $user;
+			$_SESSION['password'] = $pass;
 			
 			header("location:content.php");
 

@@ -1,5 +1,5 @@
-<?php include ("includes/header.php"); ?>
-<?php include("includes/connect.php"); ?>
+<?php include ("includes/connect.php"); ?>
+<?php include("includes/header.php"); ?>
 <?php include("includes/session_start.php"); ?>
 <table id="structure">
 <tr>
@@ -8,7 +8,9 @@
 	</td >
 	<td id ="page">
 	
-		<h2 align="center"> Welcome to Staff Area</h2>
+		<h2 align="center">
+		 Welcome to the Staff Area:<?php echo  $_SESSION['username'] ?>
+		</h2>
 		
 		<ul>
 			<li><a href="">Manage Website Content</a></li>

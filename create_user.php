@@ -6,7 +6,7 @@
 		$user = $_POST['username'];
 		$userpass = $_POST['password'];
 		$userpass = md5($userpass);
-		$message = "Account not created successfully.<br />";
+		
 
 	$query = "INSERT INTO users ( ID,username, password) 
 	                           VALUES ( NULL,'$user' ,'$userpass')";
@@ -14,11 +14,8 @@
 	$result = mysqli_query($link,$query);
 	if ($result) {
 		// Success!
-		header("location: staff_login.php");
-	       } else {
-		// Account not create successfully
-		$message = "";
-		}
+		header("location: includes/loading.php");
+	       } 
 
 	}
 ?>
