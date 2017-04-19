@@ -9,16 +9,23 @@
 	<td id ="page">
 	
 		<h2 align="center">
-		 Welcome to the Staff Area:<?php echo  $_SESSION['username'] ?>
+		 Welcome to the Staff Area:
+		<?php echo  "<span style='color:red'>"
+		 .$_SESSION['username']."</span>" ?>
 		</h2>
+		<br />
+		<br />
+		<div id="change">
 		
-		<ul>
-			<li><a href="">Manage Website Content</a></li>
-			<li><a href=" create_user.php">Add New Staff </a></li>
-			<li><a href="log_out.php">Logout</a></li>
-			<li><a href="recovery.php">reset password</a></li>
-		</ul>
-
+		<a href="">Manage Website Content</a>
+			<br><br />
+		<a href=" create_user.php">Add New Staff </a>
+			<br><br />
+		<a href="recovery.php">reset password</a>
+			<br><br />
+		<a href="log_out.php">Logout</a>
+		
+		</div>
 		<td>
 
 
