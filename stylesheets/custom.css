@@ -90,6 +90,10 @@ background: #1A446C; color: #D4E6F4;
 ul.subjects { padding-left: 0; list-style: none; }
 ul.pages { padding-left: 2em; list-style: square; }
 .selected { font-weight: bold;}
+#change{
+	text-align: center;
+	font-size: 18px;
+}
 
 /* Page Content */
 #page { padding-left: 2em; vertical-align: top; background: #EEE4B9; }

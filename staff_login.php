@@ -1,9 +1,9 @@
 <?php include("includes/connect.php"); ?>
 <?php
-	 session_start();
+	
 
 if (isset($_POST['submit'])) {
-              
+              session_start();
 	$user = $_POST['username'];
 	$pass = $_POST['password'];
 	$pass = md5($pass);
@@ -26,8 +26,8 @@ if (isset($_POST['submit'])) {
 			
 		if (mysqli_num_rows($result )==1) {
 
+			$_SESSION['portal'] = true;
 			$_SESSION['username'] = $user ;
-			$_SESSION['password'] = $pass ;
 
 			header("location:staff.php");
 

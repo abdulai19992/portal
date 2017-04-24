@@ -1,8 +1,8 @@
 <?php 
 
 	session_start();
-	if (!$_SESSION['reg_num'] && $_SESSION['password']) {
-		header("location:student_login.php");
-	}
+	include("includes/connect.php"); 
+	if (!$_SESSION['portal']) 
+		{ header("location:student_login.php");}
 
 ?>

@@ -2,25 +2,32 @@
  <?php
 
       if (isset($_POST['submit'])){
-	
+
+		session_start();
 		$user = $_POST['Regnum'];
 		$userpass = $_POST['password'];
-		$userpass = md5($userpass);
-		$message = "Account not created successfully.<br />";
-
+		$userpass1 = $_POST['password1'];
+		
+		if ($userpass==$userpass1) {
+	$userpass = md5($userpass);
 	$query = "INSERT INTO student_users ( ID,reg_num, password) 
 	                           VALUES ( NULL,'$user' ,'$userpass')";
+	             mysqli_query($link,$query); 
+	             $_SESSION['Regnum']=$user;    
+	                     
+	header("location: includes/load_1.php");
+	
+		} else {
 
-	$result = mysqli_query($link,$query);
-	if ($result) {
-		// Success!
-		header("location: student_login.php");
-	       } else {
-		// Account not create successfully
-		$message = "";
+		header("location: includes/load_2.php");
+
 		}
 
 	}
+
+		
+	       
+	
 ?>
 
 <?php include ("includes/header.php"); ?>
@@ -33,11 +40,18 @@
 	<form action="" method="POST">
 	<div class="form-group">
 		<div class="col-sm-7">
-	 <input type="text" name="Regnum"  placeholder=" Reg Number"  required maxlength="14" minlength="14"  autocomplete="off"  class="form-control">
+	 <input type="text" name="Regnum"  placeholder=" Reg Number"  required maxlength="14" minlength="14"  autocomplete="off"  
+	 class="form-control">
 	<br  />
-	 <input type="password" name="password" required placeholder=" Password" minlength="5" maxlength="30" ="" class="form-control">
+	 <input type="password" name="password" required 
+	 placeholder=" Password" minlength="5" maxlength="30"  
+	 class="form-control">
 	<br  />
-		    <input type="submit" name="submit" value="Create"  class="btn btn-success">
+	<input type="password" name="password1" required 
+	placeholder=" re-enter password" minlength="5" maxlength="30" 
+	  class="form-control">
+	<br  />
+	<input type="submit" name="submit" value="Create"  class="btn btn-success">
 
 		    	</div>
 		   </div> 

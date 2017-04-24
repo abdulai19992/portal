@@ -1,9 +1,7 @@
 <?php 
-
 	session_start();
-
-	if (!$_SESSION['username'] && $_SESSION['password']) {
+	include("includes/connect.php"); 
+	if (!$_SESSION['portal'] ) {
 		header("location:staff_login.php");
 	}
-
 ?>

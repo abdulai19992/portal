@@ -31,15 +31,14 @@ while($row = mysqli_fetch_array($result)){
 	{$row["menu_name"]}</a></li><br />";}
 	echo "<br />";
 	echo "<br />";
+echo "<a href='reset.php'>Reset password</a>";
+echo "<br />";
+echo "<br />";
 echo "<a href='logout.php'> logout</a><br ><br />";
-
-echo "<a href='reset.php'>Reset password</a><br />";
-
 	 ?>
 		
 	</td>
-<!-- it  ends here -->
-<!-- my page section start here  -->
+
 	<td id="page">
 <?php 
 
