@@ -29,7 +29,7 @@ if (isset($_POST['submit'])) {
 			$_SESSION['portal'] = true;
 			$_SESSION['reg_num'] = $user;
 			
-			header("location:content.php");
+	header("location:info.php?login success=". $_SESSION['reg_num']);
 
 		} else {
 		// username/password was not found in the database
@@ -40,26 +40,32 @@ if (isset($_POST['submit'])) {
  ?>
 
 <?php require ("includes/header.php");?> 
-<table id="structure" class="table">
+<table id="structure">
 <tr>
 	<td id="form_page">
 		
-	<!-- <h2>Student's Login</h2> -->
-	<h3 style="color:black;">Please Log In || <a href="create_account.php">Register</a></h3>
+	
+	<h3 style="color:black;">Student's Login </h3>
 <?php if (!empty($message)) {echo "<p>" . $message . "</p>";} ?>
 	<form action="" method="POST">
-<div class="form-group">
+<div class="form-group  has-success">
 <div class="col-sm-7">
 	<input type="text" name="Regnum"  placeholder=" Reg Number"  required maxlength="15"  autocomplete="" class="form-control">
 	<br  />
 	<input type="password" name="password" required placeholder=" Password" maxlength="30" autocomplete="off"  class="form-control">
 	<br  />
 	 <input type="submit" name="submit" value="Login" class="btn btn-primary">
+	 <br></br>
+	 <br></br>
+	 <div style="float:right"> 
+	 <a href="create_account.php" class="btn btn-default">Sign Up</a></div>
+	 <div><a href="recovery.php" class="btn btn-default" >forgot password</a></div>
 	 	</div>
 	 		</div>
 	</form>
 
 		</td>
+		
 	</tr>
 
 </table>

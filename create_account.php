@@ -38,7 +38,7 @@
 	<h2>Create Account</h2>
 	
 	<form action="" method="POST">
-	<div class="form-group">
+	<div class="form-group  has-success">
 		<div class="col-sm-7">
 	 <input type="text" name="Regnum"  placeholder=" Reg Number"  required maxlength="14" minlength="14"  autocomplete="off"  
 	 class="form-control">
@@ -48,7 +48,7 @@
 	 class="form-control">
 	<br  />
 	<input type="password" name="password1" required 
-	placeholder=" re-enter password" minlength="5" maxlength="30" 
+	placeholder="Confirm password" minlength="5" maxlength="30" 
 	  class="form-control">
 	<br  />
 	<input type="submit" name="submit" value="Create"  class="btn btn-success">

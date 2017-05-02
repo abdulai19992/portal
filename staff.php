@@ -21,7 +21,7 @@
 			<br><br />
 		<a href=" create_user.php">Add New Staff </a>
 			<br><br />
-		<a href="recovery.php">reset password</a>
+		<a href="reset.php">reset password</a>
 			<br><br />
 		<a href="log_out.php">Logout</a>
 		

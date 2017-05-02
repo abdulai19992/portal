@@ -29,7 +29,7 @@ if (isset($_POST['submit'])) {
 			$_SESSION['portal'] = true;
 			$_SESSION['username'] = $user ;
 
-			header("location:staff.php");
+			header("location:staff.php?login success=" . $_SESSION['username']);
 
 		} else {
 		// username/password was not found in the database
@@ -44,12 +44,10 @@ if (isset($_POST['submit'])) {
 <table id="structure" >
 <tr>
 	<td id="form_page" >
-		
-	<!-- <h2>Staff Login</h2> -->
-	<h3 style="color:black;">Please Log In or <a href="create_user.php">Sign Up</a></h3>
+	<h3 style="color:black;">Staff Login </h3>
 	<?php if (!empty($message)) {echo "<p>" . $message . "</p>";} ?>
 	<form action="" method="POST" >
-	<div class="form-group">
+	<div class="form-group  has-warning">
 		<div class="col-sm-7">
 	<input type="text" name=" username"  placeholder=" Username" 
 	 maxlength="30" autocomplete="" class="form-control"  required>
@@ -58,6 +56,10 @@ if (isset($_POST['submit'])) {
 	<br  />
 	<input type="submit" name="submit" value="Login"  
 	class="btn btn-warning">
+	<br></br>
+	<br></br>
+	 <div><a href="recovery.php" class="btn btn-default" >
+	 forgot password</a></div>
 			</div>
 		</div>	
 		

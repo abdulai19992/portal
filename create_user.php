@@ -1,4 +1,9 @@
-<?php include("includes/connect.php"); ?>
+<?php 
+  session_start();
+include("includes/connect.php");
+	if (!$_SESSION['portal'] ) {header("location:staff_login.php");}
+ ?>
+ 
  <?php
 
       if (isset($_POST['submit'])){
@@ -33,14 +38,14 @@
 		<h2>Create New User</h2>
 	
 <form action="" method="POST">
-	<div class="form-group">
+	<div class="form-group has-error">
 		<div class="col-sm-7">
 	<input type="text" name="username" placeholder=" Username"   maxlength="30" minlength="3" autocomplete="off" class="form-control"  required>
 	<br />
 	<input type="password" name="password" placeholder="password"  
 	maxlength="30" minlength="5" class="form-control" required>
 	<br />
-	<input type="password" name="password1" placeholder=" re-enter password"  
+	<input type="password" name="password1" placeholder=" Confirm password"  
 	maxlength="30" minlength="5" class="form-control" required>
 
 	<br />

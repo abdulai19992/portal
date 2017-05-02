@@ -5,7 +5,7 @@
 	</td >
 	<td id ="page">
 	<div><!-- <a href="staff_login.php">Back to login page</a><div> -->
-		<h2 align="center">Reset Password </h2>
+		<h2 align="center">Recover Password </h2>
 		<ul>
 		<li>Enter your registration number and e-mail address</li>
 		<li>Sign into your e-mail address</li>
