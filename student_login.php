@@ -29,7 +29,7 @@ if (isset($_POST['submit'])) {
 			$_SESSION['portal'] = true;
 			$_SESSION['reg_num'] = $user;
 			
-	header("location:info.php?login success=". $_SESSION['reg_num']);
+	header("location:content.php?login success=". $_SESSION['reg_num']);
 
 		} else {
 		// username/password was not found in the database

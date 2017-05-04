@@ -7,6 +7,7 @@
 
 	</body>
 <script type="text/javascript" src="scripts/bootstrap.js"></script>
+<script type="text/javascript" src="scripts/jquery.js"></script>
 </html>
 
 <?php 
