@@ -61,16 +61,6 @@
 	 display:block;
  }
  
- /*.nothing:hover{
-	 background-image:url(images/grey4.jpg);
-	 background-repeat: repeat-x repeat-y;
- }*/
- 
-/*  .nothing a{
-	 text-decoration:none;
-	 color:#006;
- }*/
- 
  .dispblock{
 	 display:block;
  }
@@ -79,6 +69,7 @@
 
 </style>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Untitled Document</title>
 </head>
 
@@ -96,18 +87,14 @@
     <li class="li"><a href="../Grade.php" class="dispblock" target="content">Statement of Results</a></li>
 
     <li class="li"><a href="../FAQ.php" class="dispblock" target="content">FAQ</a></li>
-    <!--<li class="li"><a href="#" class="dispblock" target="content">FAQ</a></li>-->
+    
     <li class="li"><a href="http://localhost/portal/reset.php" class="dispblock" target="content"> Reset Password</a></li>
 
     <li class="li"><a href="../logout.php" class="dispblock" target="_parent"> Logout</a></li>
     
        
     <li class="nothing" style="height:600px;">
-    	<!--<br/><br/><br/>
-        <a href="../osis/password.php" target="content"> <b>Reset Password</b> </a> <br/><br/>
-        <a href="../osis/logout.php" target="_parent"><b>Logout</b></a>-->
+    	
     </li>
-
-
 
 </body></html>

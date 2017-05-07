@@ -34,6 +34,7 @@ table, tr, td {
  vertical-align: top; 
   font-size: 13px; 
   line-height: 15px;
+  padding: 2em;
 }
 
 
@@ -43,7 +44,7 @@ li>a { color:#8D0D19;}
 
 #header { 
 	width: 100%
-	height: 7em; 
+	height: 5em; 
 	margin: 0px;
  	padding:1px;
  	text-align: center; 
@@ -110,7 +111,7 @@ li>a { color:#8D0D19;}
 
 
 #form_page { 
-		padding-left: 28em; 
+		padding-left: 25em; 
 		vertical-align: top; 
 		background: #EEE4B9;
 			 }
@@ -120,4 +121,6 @@ li>a { color:#8D0D19;}
 	margin-top: 1em;
 			}
 
-#form_page h3 { color: #8D0D19; }
+#form_page h3 { 
+	color: #8D0D19;
+	padding-left: 4em; }

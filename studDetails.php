@@ -1,11 +1,12 @@
 <?php include("includes/connect.php"); ?>
+<?php include("includes/session_stud.php"); ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css">
 <link rel="shortcut icon" href="images/images1.jpg">
-<title>Recovery </title>
+<title>Personal Details</title>
 
 <style type="text/css">
 
@@ -14,48 +15,21 @@
 .style6 {
 	color: #FFFFFF;
 	font-size: 24px;}
-body{
-	background: #EEE4B9;
-}
-
-#header { 
-	width: 100%
-	height: 5em; 
-	margin: 0px;
- 	padding:1px;
- 	text-align: center; 
-	background: #1A446C;  
-	color: #D4E6F4; 
-		}
-#footer {
-	margin-top:10px;
-	font-family:verdana,arial,sans-serif;
-	font-size:10pt;
-	background-color: #1A446C;
-	color: white;
-	text-align: right
-}
 
 </style>
 
 </head>
 
 <body>
-
-<div id="header">
-			<h1> University of Peaceman</h1>
-		<p style="font-size:16px;">online students portal</p>
-
-		</div>
 <p>&nbsp;</p>
 <table style=" border:solid; border-width:thin; border-color:#000000" align="center" border="0" height="169">
 
   <tbody><tr bgcolor="#000099">
-    </tr><tr bgcolor="red"><td height="29"><div class="style6" align="center">Reset Recovery</div></td>
+    </tr><tr bgcolor="#1B4684"><td height="29"><div class="style6" align="center">Personal Details</div></td>
   </tr>
 
   <tr>
-    <td height="62" width="935"><span class="style4"> 
+   <!--  <td height="62" width="935"><span class="style4"> 
 <ul >
 	<li >Enter your registration number and e-mail address</li>
 	<li>Sign into your e-mail address</li>
@@ -67,33 +41,25 @@ body{
 
   </tr>
 </tbody></table>
-<br><br>
+<br><br> -->
 <table align="center" border="0" height="169">
          <tbody><tr>
          <td width="935">
 
-<form action="" method="post">
-	<div class="form-group">
+<!-- <form action="" method="post">
+		<div class="form-group">
 		<div class="col-sm-5">
-	<input type="text" name="Username" placeholder=" Username or registration" 
+	<input type="text" name="registration" placeholder=" Registration Number" 
 	required  class="form-control">
 	</br>
-	<input type="E-mail" name="emial" placeholder=" E-mail" required class="form-control">
+	<input type="E-mail" name="emial" placeholder=" E-mail"
+	 required title=" E-mail" class="form-control">
 	</br>
-	<input type="Submit" name="submit" value="Submit" class="btn btn-primary">
-
-			</div>
+	<input type="Submit" name="submit" value="Submit" class="btn btn-warning">
 		</div>
-	</form>
+			</div>
+	</form> -->
          </span></td>
     </tr>
 </tbody></table>
-
-<div  id="footer" >
-
-©2017 University of Peaceman - Ghana.
-
-</div>
-
 </html>
-
