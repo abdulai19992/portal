@@ -10,7 +10,7 @@
 		
 		if ($userpass==$userpass1) {
 	$userpass = md5($userpass);
-	$query = "INSERT INTO student_users ( ID,reg_num, password) 
+	$query = "INSERT INTO students ( ID,student_ID, password) 
 	                           VALUES ( NULL,'$user' ,'$userpass')";
 	             mysqli_query($link,$query); 
 	             $_SESSION['Regnum']=$user;    
@@ -40,7 +40,7 @@
 	<form action="" method="POST">
 	<div class="form-group  has-success">
 		<div class="col-sm-7">
-	 <input type="text" name="Regnum"  placeholder=" Reg Number"  required maxlength="14" minlength="14"  autocomplete="off"  
+	 <input type="text" name="Regnum"  placeholder=" Student ID"  required maxlength="14" minlength="14"  autocomplete="off"  
 	 class="form-control">
 	<br  />
 	 <input type="password" name="password" required 

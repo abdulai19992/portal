@@ -10,18 +10,18 @@
 	
 		<h2 align="center">
 		 Welcome to the Staff Area:
-		<?php echo  "<span style='color:red'>"
+		<?php echo  "<span style='color:black'>"
 		 .$_SESSION['username']."</span>" ?>
 		</h2>
 		<br />
 		<br />
 		<div id="change">
 		
-		<a href="">Manage Website Content</a>
+		<a href="">View student records</a>
 			<br><br />
-		<a href=" create_user.php">Add New Staff </a>
+		<a href=" create_user.php">Add new staff </a>
 			<br><br />
-		<a href="reset.php">reset password</a>
+		<a href="reset.php">Reset password</a>
 			<br><br />
 		<a href="log_out.php">Logout</a>
 		

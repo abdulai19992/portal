@@ -73,8 +73,8 @@
 <title>Untitled Document</title>
 </head>
 
-<body scrolling="auto">
-         <?php echo "<li class='nothing'><font color='#EE173D'><b>". $_SESSION['reg_num'] ."</font></b></li>"; ?>
+<body>
+         <?php echo "<li class='nothing'><font color='#EE173D'><b>". $_SESSION['student_ID'] ."</font></b></li>"; ?>
 <li class="li"><a href="../generalinfo.php" class="dispblock" target="content">Service Information</a></li>
 
     <li class="li"><a href="../studDetails.php" class="dispblock" target="content">Personal Details</a></li>
@@ -88,7 +88,7 @@
 
     <li class="li"><a href="../FAQ.php" class="dispblock" target="content">FAQ</a></li>
     
-    <li class="li"><a href="http://localhost/portal/reset.php" class="dispblock" target="content"> Reset Password</a></li>
+    <li class="li"><a href="http://localhost/portal system/reset.php" class="dispblock" target="content"> Reset Password</a></li>
 
     <li class="li"><a href="../logout.php" class="dispblock" target="_parent"> Logout</a></li>
     

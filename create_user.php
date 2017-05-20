@@ -1,9 +1,5 @@
-<?php 
-  session_start();
-include("includes/connect.php");
-	if (!$_SESSION['portal'] ) {header("location:staff_login.php");}
- ?>
- 
+<?php include("includes/connect.php"); ?>
+<?php include("includes/session_start.php"); ?>
  <?php
 
       if (isset($_POST['submit'])){
@@ -16,7 +12,7 @@ include("includes/connect.php");
       if ($userpass==$userpass1) {
 
 	$userpass = md5($userpass);
-	$query = "INSERT INTO users ( ID,username, password) 
+	$query = "INSERT INTO staff ( ID,username, password) 
 	                           VALUES ( NULL,'$user' ,'$userpass')";
 	mysqli_query($link,$query);                   
           $_SESSION['username']=$user;

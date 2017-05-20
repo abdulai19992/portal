@@ -1,7 +1,6 @@
 <?php 
 	session_start();
-	include("includes/connect.php"); 
-	if (!$_SESSION['portal'] ) {
-		header("location:staff_login.php");
-	}
+	include 'connect.php'; 
+	if (!$_SESSION['portal_system'] ) {
+		header("location:staff_login.php");}
 ?>

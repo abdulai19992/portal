@@ -4,7 +4,7 @@
 
 if (isset($_POST['submit'])) {
 
-         $user = $_POST['Regnum'];
+            $user = $_POST['Regnum'];
 	$pass = $_POST['password'];
 	$pass = md5($pass);
 	$message = "Reg number or password combination incorrect.<br />";
@@ -17,22 +17,22 @@ if (isset($_POST['submit'])) {
 
  			global $link;
 
-		$query = "SELECT id, reg_num ";
-		$query .= "FROM student_users ";
-		$query .= "WHERE reg_num = '{$user}' ";
+		$query = "SELECT id, student_ID ";
+		$query .= "FROM students ";
+		$query .= "WHERE student_ID = '{$user}' ";
 		$query .= "AND password = '{$pass}' ";
 		$query .= "LIMIT 1";
 		$result = mysqli_query($link, $query);
 			
 		if (mysqli_num_rows($result )==1) {
 
-			$_SESSION['portal'] = true;
-			$_SESSION['reg_num'] = $user;
+			$_SESSION['portal_system'] = true;
+			$_SESSION['student_ID'] = $user;
 			
-	header("location:content.php?login success=". $_SESSION['reg_num']);
+	header("location:content.php?login success=". $_SESSION['student_ID']);
 
 		} else {
-		// username/password was not found in the database
+		
 		$message = "";
 		}
 	}
@@ -50,7 +50,7 @@ if (isset($_POST['submit'])) {
 	<form action="" method="POST">
 <div class="form-group  has-success">
 <div class="col-sm-7">
-	<input type="text" name="Regnum"  placeholder=" Reg Number"  required maxlength="15"  autocomplete="" class="form-control">
+	<input type="text" name="Regnum"  placeholder=" Student ID "  required maxlength="15"  autocomplete="" class="form-control">
 	<br  />
 	<input type="password" name="password" required placeholder=" Password" maxlength="30" autocomplete="off"  class="form-control">
 	<br  />

@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
  			global $link;
 
 		$query = "SELECT id, username ";
-		$query .= "FROM users ";
+		$query .= "FROM staff ";
 		$query .= "WHERE username = '{$user}' ";
 		$query .= "AND password = '{$pass}' ";
 		$query .= "LIMIT 1";
@@ -26,7 +26,7 @@ if (isset($_POST['submit'])) {
 			
 		if (mysqli_num_rows($result )==1) {
 
-			$_SESSION['portal'] = true;
+			$_SESSION['portal_system'] = true;
 			$_SESSION['username'] = $user ;
 
 			header("location:staff.php?login success=" . $_SESSION['username']);

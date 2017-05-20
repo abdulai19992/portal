@@ -23,15 +23,15 @@ Note the following:
 -->
 
 <frameset rows="80,*,20" frameborder="0" border="0" framespacing="0">
-  <frame name="topNav" src="http://localhost/portal/includes/top_nav.php" scrolling="no">
+  <frame name="topNav" src="http://localhost/portal system/includes/top_nav.php" scrolling="no">
 
 <frameset cols="180,*" frameborder="0" border="0" framespacing="0">
-<frame name="menu" src="http://localhost/portal/includes/menuStudPortal.php" marginheight="0" marginwidth="0" scrolling="no" noresize="noresize">
+<frame name="menu" src="http://localhost/portal system/includes/menuStudPortal.php" marginheight="0" marginwidth="0" scrolling="no" noresize="noresize">
 
-<frame name="content" src="http://localhost/portal/generalinfo.php" marginheight="0" marginwidth="0" scrolling="auto" noresize="noresize">
+<frame name="content" src="http://localhost/portal system/generalinfo.php" marginheight="0" marginwidth="0" scrolling="auto" noresize="noresize">
 </frameset>
 
-<frame name="footer" src="http://localhost/portal/includes/foota.php" scrolling="no">
+<frame name="footer" src="http://localhost/portal system/includes/foota.php" scrolling="no">
 
 <noframes>
 <p>This section (everything between the 'noframes' tags) will only be displayed if the users' browser doesn't support frames. You can provide a link to a non-frames version of the website here. Feel free to use HTML tags within this section.</p>
